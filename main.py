@@ -7,7 +7,7 @@ import json
 bot = commands.Bot(command_prefix='!')
 
 
-os.chdir(r'C:\Users\Prapthi\Desktop\discord-py\venv')
+os.chdir(r'C:\Users\Prapthi\Desktop\discord-py')
 with open('data/api_key.json', 'r') as f:
     api_key = json.load(f)
 
