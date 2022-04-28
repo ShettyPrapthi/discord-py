@@ -3,13 +3,17 @@ from discord.ext import commands
 import discord
 import requests
 import json
+from dotenv import load_dotenv
+
+load_dotenv()
 
 bot = commands.Bot(command_prefix='!')
 
 
-os.chdir(r'C:\Users\Prapthi\Desktop\discord-py')
-with open('data/api_key.json', 'r') as f:
-    api_key = json.load(f)
+# os.chdir(r'C:/Users/Prapthi/Desktop/discord-py')
+# with open('data/api_key.json', 'r') as f:
+#     api_key = json.load(f)
+api_key=os.getenv('api_key')
 
 @bot.command()
 @commands.cooldown(2, 1, commands.BucketType.default)
@@ -66,6 +70,7 @@ async def foodnut_error(ctx, error):
 
 
 
-bot.run(os.environ["DISCORD_TOKEN"])
+bot.run(os.getenv["DISCORD_TOKEN"])
+
 if name == 'main':
   main()
