@@ -3,9 +3,7 @@ from discord.ext import commands
 import discord
 import requests
 import json
-from dotenv import load_dotenv
 
-load_dotenv()
 
 bot = commands.Bot(command_prefix='!')
 
