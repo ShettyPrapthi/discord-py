@@ -14,7 +14,7 @@ bot = commands.Bot(command_prefix='!')
 # with open('data/api_key.json', 'r') as f:
 #     api_key = json.load(f)
 # api_key=os.environ('api_key')
-api_key="82b7584d73msh61c26848aa402ebp168f7ajsn29b7c83dc970"
+api_key="API_KEY"
 
 @bot.command()
 @commands.cooldown(2, 1, commands.BucketType.default)
@@ -71,6 +71,6 @@ async def foodnut_error(ctx, error):
 
 
 
-bot.run("OTY3NzkyMzcwMjgyMjc0ODM2.YmVc4Q.f-PpD1bsikX8g1SVzt559groMBc")
+bot.run("BOT_TOKEN")
 if name == 'main':
   main()
